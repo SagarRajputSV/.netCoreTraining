@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+        body {
+            font-family: Calibri, Helvetica, sans-serif;
+        }
+
+        .titleBar {
+            width: 100%;
+            height: 30pt;
+            font-size: 12pt;
+        }
+
+        .tblTitleBar {
+            width: 100%;
+            background-color: #000;
+        }
+
+        .logo {
+            height: 25pt;
+            padding-top: 2pt;
+            padding-left: 3pt;
+        }
+
+        .title {
+            color: #fff;
+            font-weight: normal;
+            line-height: 30pt;
+            font-size: 12pt;
+            font-weight: 600;
+            padding-right: 20pt;
+        }
+
+        .content {
+            background-color: #fff;
+            padding-bottom: 10pt;
+            word-break: break-word;
+        }
+
+        .emailButton {
+            color: #fff !important;
+            background-color: #00c851;
+            border-radius: 0;
+            margin-right: 0.5rem;
+            display: inline-block;
+            font-size: 1.2rem;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            line-height: 1.5;
+            text-transform: uppercase;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+
+            .emailButton:hover {
+                text-decoration: none !important;
+            }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="titleBar">
+        <table class="tblTitleBar">
+            <tr>
+                <td align='left'><img src=cid:$logo class="logo" /></td>
+                <td align='right' class="title">$title</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <div class="content">
+            <div>
+                <p>Dear <b>$user,</b></p>
+                <p>$content</p>
+                <p>
+                    <a href="$link" class="$urlClass">$anchorBody</a>
+                </p>
+                <p>
+                    Regards<br />
+                    <b>Cognizant Softvision Training Management Team</b>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
