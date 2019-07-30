@@ -20,7 +20,7 @@ using TrainingManagement.Models;
 
 namespace TrainingManagement.API.Controllers
 {
-    [Route("api/account")]
+    [Route("api/account")] 
     [ApiController]
     [Authorize]
     public class AccountController : Controller
